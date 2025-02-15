@@ -24,7 +24,7 @@ OpenCV (cv2)
 
 Clone repository ini:
 
-git clone https://github.com/yourrepo/face_detection.git
+git clone https://github.com/nfldffa/face_detection.git
 cd face_detection
 
 Buat virtual environment (opsional tetapi disarankan):
