@@ -1,59 +1,71 @@
-Face Detection Project
+Face Detection dengan OpenCV
 
-Proyek ini adalah aplikasi pendeteksi wajah menggunakan OpenCV dalam bahasa Python.
+Proyek ini adalah implementasi deteksi wajah menggunakan OpenCV. Sistem dapat mendeteksi wajah secara real-time menggunakan webcam dengan bantuan Haar Cascade Classifier.
 
-Fitur
+📌 Fitur
 
-Mendeteksi wajah dalam video real-time menggunakan webcam.
+Mendeteksi wajah menggunakan Haar Cascade Classifier.
 
 Menampilkan kotak hijau di sekitar wajah yang terdeteksi.
 
 Menutup jendela dengan menekan tombol 'q'.
 
-Menggunakan Haar Cascade Classifier untuk deteksi wajah.
+Menggunakan OpenCV untuk pemrosesan gambar.
 
-Optimalisasi gambar dengan konversi ke grayscale.
+🛠️ Persyaratan
 
-Prasyarat
+Sebelum menjalankan proyek ini, pastikan Anda telah menginstal dependensi berikut:
 
-Sebelum menjalankan proyek ini, pastikan Anda telah menginstal pustaka berikut:
+Python 3.x
+
+OpenCV (cv2)
+
+🚀 Instalasi
+
+Clone repository ini:
+
+git clone https://github.com/yourrepo/face_detection.git
+cd face_detection
+
+Buat virtual environment (opsional tetapi disarankan):
+
+python -m venv venv
+source venv/bin/activate  # Untuk macOS/Linux
+venv\Scripts\activate    # Untuk Windows
+
+Instal dependensi:
 
 pip install opencv-python
 
-Cara Menggunakan
+🎯 Cara Menjalankan
 
-Pastikan Anda memiliki file face_ref.xml di direktori yang sama dengan skrip ini.
-
-Jalankan skrip dengan perintah berikut:
+Jalankan skrip utama dengan perintah berikut:
 
 python main.py
 
-Tekan tombol 'q' untuk menutup jendela aplikasi.
+Setelah dijalankan, kamera akan aktif dan mulai mendeteksi wajah secara real-time.
 
-Struktur Kode
+📂 Struktur Proyek
 
-face_detection(frame): Mengubah frame menjadi grayscale dan mendeteksi wajah menggunakan Haar Cascade Classifier.
+face_detection/
+│── main.py         # File utama untuk menjalankan deteksi wajah
+│── face_ref.xml    # Model deteksi wajah Haar Cascade
+│── requirements.txt # Daftar dependensi
+│── .gitignore      # Mengabaikan file yang tidak perlu
+│── README.md       # Dokumentasi proyek
 
-drawer_box(frame): Menggambar kotak di sekitar wajah yang terdeteksi.
+📝 Catatan
 
-close_window(): Menutup kamera dan menutup jendela aplikasi.
+Jika kamera tidak berfungsi, pastikan webcam terhubung dan tidak digunakan oleh aplikasi lain.
 
-main(): Menjalankan loop utama untuk menangkap frame dan menampilkan hasil deteksi wajah.
+Jika performa lambat, coba kurangi resolusi frame dalam kode OpenCV.
 
-Potensi Pengembangan
+🤝 Kontribusi
 
-Menggunakan model deteksi wajah berbasis deep learning untuk akurasi yang lebih tinggi.
+Jika Anda ingin berkontribusi, silakan fork repository ini dan buat pull request dengan perbaikan atau fitur tambahan.
 
-Menambahkan fitur deteksi mata dan senyuman.
+📜 Lisensi
 
-Menyimpan hasil deteksi dalam bentuk gambar atau video.
+Proyek ini dilisensikan di bawah MIT License.
 
-Mengintegrasikan dengan sistem keamanan atau aplikasi berbasis AI.
-
-Lisensi
-
-Proyek ini menggunakan lisensi MIT. Anda bebas menggunakan dan memodifikasinya.
-
-Kontribusi
-
-Jika ingin berkontribusi, silakan buat pull request atau buka issue pada repository ini.
+✨ Dibuat dengan ❤️ oleh Naufal Daffa Erlangga
